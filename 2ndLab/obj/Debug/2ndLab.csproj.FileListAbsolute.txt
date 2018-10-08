@@ -1,0 +1,7 @@
+C:\Users\Heather\Desktop\2ndLab\2ndLab\bin\Debug\2ndLab.exe.config
+C:\Users\Heather\Desktop\2ndLab\2ndLab\bin\Debug\2ndLab.exe
+C:\Users\Heather\Desktop\2ndLab\2ndLab\bin\Debug\2ndLab.pdb
+C:\Users\Heather\Desktop\2ndLab\2ndLab\obj\Debug\2ndLab.csprojAssemblyReference.cache
+C:\Users\Heather\Desktop\2ndLab\2ndLab\obj\Debug\2ndLab.csproj.CoreCompileInputs.cache
+C:\Users\Heather\Desktop\2ndLab\2ndLab\obj\Debug\2ndLab.exe
+C:\Users\Heather\Desktop\2ndLab\2ndLab\obj\Debug\2ndLab.pdb
