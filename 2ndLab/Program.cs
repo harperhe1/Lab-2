@@ -14,8 +14,11 @@ namespace Lab_Number_2
         {
             double length;
             double width;
+            double height;
             double area;
             double perimeter;
+            double volume;
+            string yesOrNo;
 
             do
             {
@@ -26,20 +29,39 @@ namespace Lab_Number_2
                 Console.WriteLine("Enter Width:");
                 width = Convert.ToDouble(Console.ReadLine());
 
+                Console.WriteLine("Enter Height:");
+                height = Convert.ToDouble(Console.ReadLine());
+
                 area = length * width;
-                Console.WriteLine("Area:{0}", area);
-                Console.ReadLine();
+                Console.WriteLine("Area:{0}", area);                
 
                 perimeter = 2 * length + 2 * width;
-                Console.WriteLine("Perimeter:{0}", perimeter);
-                Console.ReadLine();
+                Console.WriteLine("Perimeter:{0}", perimeter);                
 
-
+                volume = length * width * height;
+                Console.WriteLine("Volume:{0}", volume);             
 
 
                 Console.WriteLine("Continue?(y/n)");
+
+                yesOrNo = Console.ReadLine().ToLower();                
+
+                if (yesOrNo == "y") 
+                {
+                  
+                }
+                else if (yesOrNo == "n")
+                {
+                    Console.WriteLine("Goodbye!");
+
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input");
+                }
                 // Console.ReadLine();
-            } while (Console.ReadLine() == "y");
+            } while (yesOrNo == "y");
+
 
 
 
