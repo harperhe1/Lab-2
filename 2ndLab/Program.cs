@@ -19,9 +19,14 @@ namespace Lab_Number_2
             double perimeter;
             double volume;
             string yesOrNo;
+            bool cont = true;
+
 
             do
             {
+                
+                bool cont2 = true;
+
                 Console.WriteLine("Welcome to Grand Circus' Room Detail Generator!");
                 Console.WriteLine("Enter Length:");
                 length = Convert.ToDouble(Console.ReadLine());
@@ -43,26 +48,30 @@ namespace Lab_Number_2
 
 
                 Console.WriteLine("Continue?(y/n)");
-
-                yesOrNo = Console.ReadLine().ToLower();                
-
-                if (yesOrNo == "y") 
+                while (cont2) // cont2 is true
                 {
-                  
-                }
-                else if (yesOrNo == "n")
-                {
-                    Console.WriteLine("Goodbye!");
 
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input");
+                    yesOrNo = Console.ReadLine().ToLower();
+
+                    if (yesOrNo == "y")
+                    {
+                        cont2 = false; // exit while loop
+                    }
+                    else if (yesOrNo == "n")
+                    {
+                        Console.WriteLine("Goodbye!");
+                        cont = false; //exit do while loop
+                        cont2 = false; // while loop
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Try Again");
+                    }
                 }
                 // Console.ReadLine();
-            } while (yesOrNo == "y");
+            } while (cont);
 
-
+            
 
 
         }
